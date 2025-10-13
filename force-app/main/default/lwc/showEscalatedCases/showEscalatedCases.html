@@ -1,0 +1,12 @@
+<template>
+    
+        <div>
+             <lightning-button  label="Escalated Cases" variant="brand" onclick={handleOnClick}></lightning-button><br><br/>
+        </div>
+    <lightning-card title="Escalated Cases" icon-name="standard:case">
+        <lightning-datatable key-field="Id"
+                            columns={tableColumns}
+                            data={cases}></lightning-datatable>
+    </lightning-card>
+    
+</template>
